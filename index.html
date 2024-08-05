@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Enregistrement</title>
+
+    <!-- Faisons appel au CSS -->
+     <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Formulaire d'Enregistrement</h1>
+    <!-- Ajouter un paragraphe expliquant le formulaire -->
+    <p>Remplir ce formulaire d'enregistrement avec les informations réquises.</p>
+
+    <!-- Ajouter le formulaire-->
+     <form action="/action_page.php" method="POST">
+    
+    <!-- Nous allons créer un champ qui va contenir tout le formulaire-->
+    <fieldset>
+        <!-- Au sein de ce champ, nous allons créer quatre (04) label-->
+         <label for="first-name">Saisir Ton/Tes Nom(s): <input type="text" id="first-name" required="" ></label>
+         <label for="last-name">Saisir Ton/Tes Prénom(s): <input type="text" id="last-name" required="" ></label>
+         <label for="email">Saisir Ton email: <input type="email" id="email" required="" ></label>
+         <!-- You can add a partten="[a-z0-5]{8,}" et supprimer le required attribute ou encore ajouter minlength="8"-->
+         <label for="new-password"> Créer Un Nouveau mot de passe: <input type="password" id="new-password" required="" ></label>
+    </fieldset>
+    <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="">Personal <input type="radio" name="account-type"></label>
+    
+        <label for="">Business <input type="radio" name="account-type"></label>
+    </fieldset>
+    <!-- Ajouter un bouton pour soumettre et valider le formulaire-->
+     <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
