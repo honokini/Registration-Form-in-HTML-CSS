@@ -28,10 +28,34 @@
     </fieldset>
     <fieldset>
         <legend>Account type (required)</legend>
-        <label for="">Personal <input type="radio" name="account-type"></label>
+        <label for="personal-account">Personal <input type="radio" name="account-type" id="personal-account" required></label>
     
-        <label for="">Business <input type="radio" name="account-type"></label>
+        <label for="business-account">Business <input type="radio" name="account-type" id="business-account"></label>
     </fieldset>
+    <fieldset>
+       <label for="">Upload a profile picture: <input type="file"></label>
+       <label for="">Input your age (years): <input type="number" min="13" max="120"></label> 
+    
+       <label for="">
+        How did you hear about us?
+        <select name="" id="">
+            <option value="">(Select One)</option>
+            <option value="1">Facebook</option>
+            <option value="2">Tiktok</option>
+            <option value="3">Whatsapp</option>
+            <option value="4">Linkedin</option>
+            <option value="5">Instagram</option>
+            <option value="6">Telegram</option>
+        </select>
+       </label>
+    </fieldset>
+    <!-- Termes et conditions d'utilisation-->
+<label for="terms-and-conditions">
+    <input type="checkbox" name="" id="terms-and-conditions" required/>
+I accept the terms and conditions.
+
+</label>
+
     <!-- Ajouter un bouton pour soumettre et valider le formulaire-->
      <input type="submit" value="Submit">
     </form>
