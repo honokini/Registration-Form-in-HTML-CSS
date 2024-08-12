@@ -20,11 +20,11 @@
     <!-- Nous allons créer un champ qui va contenir tout le formulaire-->
     <fieldset>
         <!-- Au sein de ce champ, nous allons créer quatre (04) label-->
-         <label for="first-name">Saisir Ton/Tes Nom(s): <input type="text" id="first-name" required="" ></label>
-         <label for="last-name">Saisir Ton/Tes Prénom(s): <input type="text" id="last-name" required="" ></label>
-         <label for="email">Saisir Ton email: <input type="email" id="email" required="" ></label>
+         <label for="first-name">Saisir Ton/Tes Nom(s): <input type="text" id="first-name" required="" name="first-name" ></label>
+         <label for="last-name">Saisir Ton/Tes Prénom(s): <input type="text" id="last-name" required="" name="last-name"></label>
+         <label for="email">Saisir Ton email: <input type="email" id="email" required="" name="email"></label>
          <!-- You can add a partten="[a-z0-5]{8,}" et supprimer le required attribute ou encore ajouter minlength="8"-->
-         <label for="new-password"> Créer Un Nouveau mot de passe: <input type="password" id="new-password" required="" ></label>
+         <label for="new-password"> Créer Un Nouveau mot de passe: <input type="password" id="new-password" name="new-password" required="" ></label>
     </fieldset>
     <fieldset>
         <legend>Account type (required)</legend>
@@ -33,12 +33,12 @@
         <label for="business-account">Business <input type="radio" name="account-type" id="business-account"></label>
     </fieldset>
     <fieldset>
-       <label for="">Upload a profile picture: <input type="file"></label>
-       <label for="">Input your age (years): <input type="number" min="13" max="120"></label> 
+       <label for="profile-picture">Upload a profile picture: <input type="file" id="profile-picture" name="profile-picture"></label>
+       <label for="age">Input your age (years): <input type="number" id="age" name="age" min="13" max="120"></label> 
     
-       <label for="">
+       <label for="referrer">
         How did you hear about us?
-        <select name="" id="">
+        <select name="" id="referrer" name="referrer">
             <option value="">(Select One)</option>
             <option value="1">Facebook</option>
             <option value="2">Tiktok</option>
@@ -49,13 +49,11 @@
         </select>
        </label>
     </fieldset>
+    <label for="bio">Provide a bio: <textarea name="bio" id="bio" rows="3" cols="30"></textarea></label>
     <!-- Termes et conditions d'utilisation-->
-<label for="terms-and-conditions">
-    <input type="checkbox" name="" id="terms-and-conditions" required/>
-I accept the terms and conditions.
-
-</label>
-
+    <label for="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" name="terms" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
     <!-- Ajouter un bouton pour soumettre et valider le formulaire-->
      <input type="submit" value="Submit">
     </form>
